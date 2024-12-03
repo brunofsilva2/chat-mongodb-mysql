@@ -19,7 +19,7 @@ app.use('/', (req, res) => {
 
 function connectDB() {
 
-    let dbUrl = 'mongodb+srv://bruno19fs:82418423367241@cluster0.rctzybn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+    let dbUrl = '';
 
     mongoose.connect(dbUrl);
     mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
